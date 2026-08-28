@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Đẹp Tự Nhiên - Bí quyết làm đẹp từ thiên nhiên</title>
+    <meta name="description"
+          content="Tip Đẹp Tự Nhiên chia sẻ các bí quyết làm đẹp từ hoa quả như cam, bơ, dâu tây, chuối và đu đủ.">
+
+    <meta name="keywords"
+          content="làm đẹp từ hoa quả, mẹo làm đẹp, chăm sóc da, hoa quả làm đẹp">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f6ef;
+            color: #354735;
+            line-height: 1.6;
+        }
+
+          /*HEADER*/
+
+        header {
+            background: white;
+            padding: 18px 7%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+
+            position: sticky;
+            top: 0;
+            z-index: 100;
+         }
+
+        .logo {
+            font-family: 'roboto', 'inter', arial, san-serif;
+            font-size: 25px;
+            font-weight: bold;
+            color: #4f7654;
+        }
+
+        nav a {
+            color: #354735;
+            text-decoration: none;
+            margin-left: 22px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #7b9b70;
+        }
+
+
+        /* BANNER */
+
+        .hero {
+
+            min-height: 470px;
+
+            display: flex;
+            align-items: center;
+
+            padding: 70px 7%;
+
+            background:
+            linear-gradient(
+                rgba(50,75,50,0.58),
+                rgba(50,75,50,0.58)
+            ),
+            url("https://bazaarvietnam.vn/wp-content/uploads/2021/02/nhung-loai-trai-cay-tot-cho-da-mat_458751940.jpg");
+
+            background-position: center;
+            background-size: cover;
+
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .hero h1 {
+
+            font-family: 'roboto', 'inter', arial, san-serif;
+
+            font-size: 58px;
+
+            line-height: 1.1;
+
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+
+            font-size: 19px;
+
+            margin-bottom: 30px;
+        }
+
+        .button {
+
+            display: inline-block;
+
+            padding: 13px 25px;
+
+            background: #ead29d;
+
+            color: #354735;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            border-radius: 30px;
+        }
+
+
+        /* PHẦN BÀI VIẾT */
+
+        .container {
+
+            max-width: 1150px;
+
+            margin: auto;
+
+            padding: 70px 20px;
+        }
+
+        .section-title {
+
+            text-align: center;
+
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+
+            font-family: 'roboto', 'inter', arial, san-serif;
+
+            font-size: 38px;
+
+            color: #4d7350;
+
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+
+            color: #6e776d;
+        }
+
+
+        /* SEARCH */
+
+        .search {
+
+            max-width: 600px;
+
+            margin: 0 auto 35px;
+        }
+
+        .search input {
+
+            width: 100%;
+
+            padding: 15px 20px;
+
+            border: 1px solid #d5ddd1;
+
+            border-radius: 30px;
+
+            font-size: 16px;
+
+            outline: none;
+        }
+
+
+        /* CARD */
+
+        .articles {
+
+            display: grid;
+
+            grid-template-columns:
+            repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .card {
+
+            background: white;
+
+            border-radius: 15px;
+
+            overflow: hidden;
+
+            box-shadow:
+            0 5px 20px rgba(0,0,0,0.07);
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+
+            transform: translateY(-6px);
+        }
+
+        .card img {
+
+            width: 100%;
+
+            height: 210px;
+
+            object-fit: cover;
+        }
+
+        .card-content {
+
+            padding: 22px;
+        }
+
+        .tag {
+
+            display: inline-block;
+
+            background: #eaf2e6;
+
+            color: #5d805f;
+
+            padding: 4px 11px;
+
+            border-radius: 20px;
+
+            font-size: 13px;
+        }
+
+        .card h3 {
+
+            font-family: 'roboto', 'inter', arial, san-serif;
+
+            color: #456447;
+
+            font-size: 22px;
+
+            margin: 10px 0;
+        }
+
+        .card p {
+
+            color: #70786e;
+
+            margin-bottom: 15px;
+        }
+
+        .read {
+
+            color: #608060;
+
+            text-decoration: none;
+
+            font-weight: bold;
+        }
+
+
+        /* GIỚI THIỆU */
+
+        .about {
+
+            background: #e8f0e4;
+
+            text-align: center;
+        }
+
+        .about h2 {
+
+            font-family: 'roboto', 'inter', arial, san-serif;
+
+            color: #4d7350;
+
+            font-size: 36px;
+
+            margin-bottom: 15px;
+        }
+
+        .about p {
+
+            max-width: 800px;
+
+            margin: 10px auto;
+
+            color: #657064;
+        }
+        /* LIÊN HỆ */
+
+.contact {
+    background: #263528;
+    color: white;
+    padding: 60px 7%;
+}
+
+.contact-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.contact h2 {
+    font-family: 'roboto', 'inter', arial, san-serif;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.contact p {
+    color: #e4e8e2;
+    margin-bottom: 12px;
+}
+        /* FOOTER */
+
+        footer {
+
+            font-family: 'roboto', 'inter', arial, san-serif;
+            font-weight: 700;
+            background: #304331;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 30px 20px;
+        }
+
+        footer p {
+
+            color: #cbd4c9;
+
+            margin-top: 8px;
+        }
+
+
+        /* ĐIỆN THOẠI */
+
+        @media (max-width: 800px) {
+
+            header {
+
+                flex-direction: column;
+
+                gap: 12px;
+            }
+
+            nav a {
+
+                margin: 0 7px;
+
+            }
+
+            .hero h1 {
+
+                font-size: 44px;
+
+            }
+
+            .articles {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+   <!-- MENU -->
+
+<header>
+
+    <div class="logo">
+        Tip đẹp tự nhiên
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Trang chủ
+        </a>
+
+        <a href="#bai-viet">
+            Bài viết
+        </a>
+
+        <a href="gioi-thieu.html">
+            Giới thiệu
+        </a>
+    </nav>
+
+</header>
+
+
+<!-- BANNER -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Đẹp hơn<br>
+            từ thiên nhiên
+        </h1>
+
+        <p>
+            Khám phá những cách chăm sóc sắc đẹp
+            từ các loại hoa quả quen thuộc,
+            đơn giản và gần gũi.
+        </p>
+
+        <a href="#bai-viet" class="button">
+            Xem bài viết
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- BÀI VIẾT -->
+
+<section class="container" id="bai-viet">
+
+    <div class="section-title">
+
+        <h2>
+            CÁC TIP LÀM ĐẸP TỪ HOA QUẢ
+        </h2>
+
+        <p>
+            Khám phá công dụng và cách sử dụng
+            các loại trái cây trong chăm sóc sắc đẹp.
+        </p>
+
+    </div>
+
+
+    <!-- Ô TÌM KIẾM -->
+
+    <div class="search">
+
+        <input
+            type="text"
+            id="search"
+            placeholder=" Tìm kiếm bài viết..."
+        >
+
+    </div>
+
+
+    <div class="articles" id="articleList">
+
+
+        <!-- BÀI 1 -->
+
+        <article class="card">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIwgv3__I8S2nOmb3tH2t5IHMR4XO2Dm62eWmaRhIqTmdgWO3T9fDK0OA&s=10"
+                alt="Quả cam và vỏ cam"
+            >
+
+            <div class="card-content">
+
+                <span class="tag">
+                    Làm đẹp
+                </span>
+
+                <h3>
+                    Công dụng vỏ cam trong làm đẹp
+                </h3>
+
+                <p>
+                    Tìm hiểu dưỡng chất trong vỏ cam,
+                    cách tận dụng và những lưu ý khi sử dụng.
+                </p>
+
+                <a
+                    class="read"
+                    href="cong-dung-vo-cam.html"
+                >
+                    Đọc bài viết →
+                </a>
+
+            </div>
+
+        </article>
+
+        <!-- BÀI 2 -->
+
+        <article class="card">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDwM-mb-jX05Ztz7vQaYUaXxkpakarh_-OzihiE_KI1x6_QQl6UlwAkzs&s=10"
+                alt="Dâu tây tươi"
+            >
+
+            <div class="card-content">
+
+                <span class="tag">
+                    Vitamin
+                </span>
+
+                <h3>
+                    Làm đẹp từ dâu tây 
+                </h3>
+
+                <p>
+                    Khám phá cách giảm mụn hiệu quả từ dâu tây.
+                </p>
+
+                <a
+                    class="read"
+                    href="Lam-dep-tu-dau-tay.html"
+                >
+                    Đọc bài viết →
+                </a>
+
+            </div>
+
+        </article>
+
+        <!-- BÀI 3 -->
+
+        <article class="card">
+
+            <img
+                src="https://c.pxhere.com/photos/d6/5d/papaya_red_papaya_fruit_ripe_seeds_orange_juicy_tropical-554753.jpg!d"
+                alt="Quả đu đủ"
+            >
+
+            <div class="card-content">
+
+                <span class="tag">
+                    Hoa quả
+                </span>
+
+                <h3>
+                    Đu đủ và cách chăm sóc sắc đẹp
+                </h3>
+
+                <p>
+                    Tìm hiểu vitamin và dưỡng chất
+                    có trong đu đủ.
+                </p>
+
+                <a
+                    class="read"
+                    href="du-du-va-sac-dep.html"
+                >
+                    Đọc bài viết →
+                </a>
+
+            </div>
+
+        </article>
+
+        <!-- BÀI 4 -->
+
+        <article class="card">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCCzXtse6T6P3a8zHDFjTNbWELxgiXypkhnOIX0VOeTs2Q5t5q2NDRjBa8&s=10"
+                alt="Quả kiwi"
+            >
+
+            <div class="card-content">
+
+                <span class="tag">
+                    Trái cây
+                </span>
+
+                <h3>
+                    Kiwi – nguồn vitamin C dồi dào
+                </h3>
+
+                <p>
+                    Tìm hiểu vitamin C, chất xơ và
+                    dưỡng chất có trong kiwi.
+                </p>
+
+                <a
+                    class="read"
+                    href="kiwi-va-lam-dep.html"
+                >
+                    Đọc bài viết →
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+<!--PHẦN LIÊN HỆ -->
+
+<section class="contact">
+
+    <div class="contact-content">
+
+        <h2>Liên hệ</h2>
+        <p>
+            Địa chỉ: 123 Đường Thiên Nhiên, Quận 1, TP. Hà Nội
+        </p>
+
+        <p>
+            Điện thoại: 0123456789
+        </p>
+
+        <p>
+            Email: tipdeptunhien@gmail.com
+        </p>
+
+        <p>
+            Website cung cấp thông tin mang tính tham khảo
+            về làm đẹp và chăm sóc bản thân.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    <p>
+        © 2026 Tip Đẹp Tự Nhiên
+    </p>
+
+</footer>
+
+
+<!-- TÌM KIẾM -->
+ <script>
+
+const search =
+document.getElementById("search");
+
+const cards =
+document.querySelectorAll(".card");
+
+
+search.addEventListener(
+    "input",
+    function () {
+
+        const keyword =
+        this.value.toLowerCase();
+
+
+        cards.forEach(
+            function(card) {
+
+                const content =
+                card.innerText.toLowerCase();
+
+
+                if (
+                    content.includes(keyword)
+                ) {
+
+                    card.style.display = "";
+
+                } else {
+
+                    card.style.display = "none";
+
+                }
+
+            }
+        );
+
+    }
+);
+
+</script>
+</body>
+</html>
